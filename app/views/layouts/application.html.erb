@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html class="translanted-ltr">
+  <head>
+
+    <title>WebCanpBackendNew</title>
+
+    <meta name="csrf-param" content="authenticity_token">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+ <body>
+  <%= render 'shared/flash_message' %>
+
+    <main>
+      <%= yield %>
+    </main>
+ </body>
+
+</html>
